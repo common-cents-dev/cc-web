@@ -12,7 +12,7 @@ class EventsCalendar extends React.Component{
                         events={[
                             { title: 'Cryptocurrency', date: '2021-03-08' },
                             { title: 'Adulting 101', date: '2021-02-25' },
-                            { title: 'Taxes 101', date: '2021-03-25' },
+                            { title: 'Taxes 101', date: '2021-04-01' },
                           ]}
                     />
           </div>
