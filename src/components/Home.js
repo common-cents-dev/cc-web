@@ -6,6 +6,7 @@ import sampleEvent from "../images/linkedin_event.png"
 import chaptersMap from "../images/chapters_map.jpeg"
 import marketplacePic from "../images/marketplace_demo.png"
 import EventsCalendar from "./EventsCalendar.js"
+import UpcomingTimeline from "./UpcomingTimeline.js"
 import BoxKPI from "./BoxKPI.js"
 
 class Home extends React.Component {
@@ -172,7 +173,9 @@ class Home extends React.Component {
                 <h1 class = "title is-1">Upcoming Events</h1>
                 <div class="hero-body">
                 <div class="container">
-                    <EventsCalendar />
+               
+                <EventsCalendar />
+             
                 </div>
                 </div>
             </section>

@@ -145,7 +145,7 @@ function Marketplace() {
                             </div>
                         </div>
                         <div id="retirement" class="is-hidden">
-                            <h3 class="is-size-5 title">Insurance</h3>
+                            <h3 class="is-size-5 title">Retirement</h3>
                             <div class = "columns">
                             <div class = "column is-one-third" data-aos="fade-down">
                                     <Fidelity />
@@ -156,7 +156,7 @@ function Marketplace() {
                             </div>
                         </div>
                         <div id="bitcoin" class="is-hidden">
-                            <h3 class="is-size-5 title">Insurance</h3>
+                            <h3 class="is-size-5 title">Bitcoin</h3>
                             <div class = "columns">
                             <div class = "column is-one-third" data-aos="fade-down">
                                     <Coinbase />
@@ -174,6 +174,9 @@ function Marketplace() {
                     </div>
                     </div>
                 </div>
+                </div>
+                <div class = "mx-6 my-4 has-text-centered">
+                    <p class = "is-size-7">When evaluating product suggestions, please review the financial institution's terms and conditions. Common Cents Collaborative holds no liability for any damages incurred as a result of any individual actions based on the provided information on our marketplace. Some of our product suggestions are by companies that are partnered with Common Cents Collaborative. Our partnerships have no bias in our process of selecting products to suggest; in tune with our nonprofit mission, we strive to find and suggest the best financial products for students. </p>
                 </div>
             </section>
           );
