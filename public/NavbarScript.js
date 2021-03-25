@@ -1,5 +1,3 @@
-console.log("Public Test 2")
-
 document.querySelectorAll('.tabs li').forEach(tab => {
   tab.addEventListener('click', () => {
     document.querySelectorAll('.tabs li').forEach(item => item.classList.remove('is-active'));

@@ -11,6 +11,7 @@ class Public extends React.Component{
                         <div class="tags is-pulled-right pl-1"> 
                             <span class="tag is-default">Investing</span>
                             <span class="tag is-default">App</span>
+                            <span class="tag is-default">CC Partner</span>
                         </div>
                         </p>
                     </header>

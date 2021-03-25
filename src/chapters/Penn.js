@@ -126,8 +126,6 @@ class Penn extends React.Component {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class = "columns">
                     <div class = "column is-one-third" data-aos="fade-down">
                         <div class="card">
                             <div>

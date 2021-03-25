@@ -103,7 +103,7 @@ class Footer extends React.Component{
                             </span>
                             <br></br>
                             <div class = "py-2">
-                                <p class = "is-size-7">Common Cents Collaborative is not a financial advisor, investment advisor, legal advisor, accountant, or other certified financial professional. All financial opinions expressed by Common Cents Collaborative are intended for informational purposes and should not be viewed as legal or financial advice.</p>
+                                <p class = "is-size-7">Common Cents Collaborative ("Common Cents") is not a financial advisor, investment advisor, legal advisor, accountant, or other certified financial professional. All financial opinions expressed by Common Cents Collaborative are intended for informational purposes and should not be viewed as legal or financial advice.</p>
                             </div>
                             <div>
                                 <p class = "is-size-7">Looking for <b>Penny Harvest</b> (Common Cents New York)? Learn more about it <a href = "https://web.archive.org/web/20150404013854/http://pennyharvest.org/contact-us/staff/">here</a>.</p>
