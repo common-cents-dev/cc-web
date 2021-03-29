@@ -100,7 +100,7 @@ function Housing() {
                                 <col span="1" style={{"width": "10%"}}/>
                                 <col span="1" style={{"width": "20%"}}/>
                             </colgroup>
-                            <thead><tr><th title="Field #1">Apartment Complex Name2</th>
+                            <thead><tr><th title="Field #1">Apartment Complex Name</th>
                             <th title="Field #2">1BR (Studio)</th>
                             <th title="Field #3">1BR</th>
                             <th title="Field #4">2BR</th>
