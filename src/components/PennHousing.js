@@ -184,6 +184,10 @@ function Housing() {
       }
     }
     
+    export default GoogleApiWrapper({
+      apiKey: 'AIzaSyCA7XfkrKxpoXIfOM8qxM9iQogDdnLe14M'
+    })(MapContainer);
+    
     return(
         <section>
         <div>
