@@ -206,7 +206,6 @@ function Marketplace() {
                         </div>
                     </div>
                     <div class = "mx-6 my-4 has-text-centered">
-                        <p class = "is-size-7">When evaluating product suggestions, please review the financial institution's terms and conditions. Common Cents Collaborative ("Common Cents") holds no liability for any damages incurred as a result of any individual actions based on the provided information on our marketplace. Some of our product suggestions are by companies that are partnered with Common Cents Collaborative. Our partnerships have no bias in our process of selecting products to suggest; in tune with our nonprofit mission, we strive to find and suggest the best financial products for students. </p>
                         <p class = "is-size-7">When evaluating product suggestions, please review the financial institution's terms and conditions. Common Cents Collaborative ("Common Cents") holds no liability for any damages incurred as a result of any individual actions based on the provided information on our marketplace. Some of our product suggestions are by companies that are partnered with Common Cents Collaborative. Our partnerships have no bias in our process of selecting products to suggest; in tune with our nonprofit mission, we strive to find and suggest financial products that are suitable for students. </p>
                     </div>
                 </div>

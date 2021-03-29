@@ -1,4 +1,5 @@
 import React, { useState, useEffect} from 'react';
+import Amenity from "./Amenity";
 
 function Apartment(props) {      
     return (
@@ -44,25 +45,32 @@ function Apartment(props) {
                             <hr class = "my-2"></hr>
                             <h1 class = "has-text-weight-semibold py-1">Walking Time To</h1>
                             <nav class="level has-text-centered">
-                                    <div class="level-item has-text-centered">
-                                        <div>
-                                        <p>DRL</p>
-                                        <p>{props.minToDRL}</p>
-                                        </div>
+                                <div class="level-item has-text-centered">
+                                    <div>
+                                    <p>DRL</p>
+                                    <p>{props.minToDRL}</p>
                                     </div>
-                                    <div class="level-item has-text-centered">
-                                        <div>
-                                        <p>Hunstman</p>
-                                        <p>{props.minToHuntsman}</p>
-                                        </div>
+                                </div>
+                                <div class="level-item has-text-centered">
+                                    <div>
+                                    <p>Hunstman</p>
+                                    <p>{props.minToHuntsman}</p>
                                     </div>
-                                    <div class="level-item has-text-centered">
-                                        <div>
-                                        <p>Van Pelt</p>
-                                        <p>{props.minToVanPeltLibrary}</p>
-                                        </div>
+                                </div>
+                                <div class="level-item has-text-centered">
+                                    <div>
+                                    <p>Van Pelt</p>
+                                    <p>{props.minToVanPeltLibrary}</p>
                                     </div>
-                                </nav>
+                                </div>
+                            </nav>
+                            <div class = "columns"> 
+                                <Amenity type = "gym" />
+                                <Amenity type = "pet" />
+                                <Amenity type = "study" />
+                                <Amenity type = "laundry" />
+                                <Amenity type = "pool" />
+                            </div>
                         </div>
                     </div>
                 </div>

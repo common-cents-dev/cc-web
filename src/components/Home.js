@@ -68,7 +68,7 @@ class Home extends React.Component {
                 <div class="hero-body">
                     <div class="container">
                         <h1 class = "titled is-1 title has-text-centered">What We Do</h1>
-                        <h2 class = "subtitled is-3 subtitle has-text-centered py-2">We are redefining personal finance education through <span class = "has-text-info" id="typewriter"></span></h2>
+                        <h2 class = "subtitled is-3 subtitle has-text-centered py-2">We are redefining personal finance education through:</h2>
                         <div class="columns is-vcentered">
                             <div data-aos="fade-left" class="column
                             is-10-mobile is-offset-1-mobile
