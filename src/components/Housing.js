@@ -193,7 +193,7 @@ export default GoogleApiWrapper({
 
     return (
             <section class="section">
-                <h1 class = "title has-text-centered">Off-Campus Housing</h1>
+                <h1 class = "title has-text-centered">Off-Campus Housing2</h1>
                 <div class="container">
                     <div class = "box">
                     <iframe src="https://snazzymaps.com/embed/287523" width="100%" height="600px" style = {{"height": "75vh"}}></iframe>
