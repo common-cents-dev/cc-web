@@ -49,13 +49,6 @@ function Penn(){
             </section>
             
             <section class="section">
-                <h1 class = "title has-text-centered">Off-Campus Housing</h1>
-                <div class="container">
-                    <Housing />
-                </div>
-            </section>
-
-            <section class="section">
                 <h1 class = "title has-text-centered">Executive Board</h1>
                 <div class="container">
                     <div class = "columns">
