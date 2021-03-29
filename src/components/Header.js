@@ -26,7 +26,10 @@ class Header extends React.Component{
                             <Link class="navbar-item is-size-5 has-text-weight-semibold" to="/about">
                                 About
                             </Link>
-                            {/* <Link class="navbar-item is-size-5 has-text-weight-semibold" to = "/events">
+                            <Link class="navbar-item is-size-5 has-text-weight-semibold" to = "/housing">
+                                Housing
+                            </Link>
+                             {/* <Link class="navbar-item is-size-5 has-text-weight-semibold" to = "/events">
                                 Events
                             </Link> */}
                             <Link class="navbar-item is-size-5 has-text-weight-semibold" to = "/marketplace">

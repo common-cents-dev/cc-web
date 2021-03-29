@@ -7,7 +7,7 @@ import Vivek from "../images/headshots/upenn/Vivek_Olumbe.jpg"
 import Winni from "../images/headshots/upenn/Winni_Zhang.jpeg"
 import Graham from "../images/headshots/upenn/Graham_Branscom.JPG"
 import Rikki from "../images/headshots/upenn/Rikki_Kong.jpg"
-import Housing from "../components/PennHousing.js"
+import Housing from "../components/housing/PennHousing.js"
 
 
 function Penn(){
@@ -51,7 +51,7 @@ function Penn(){
             <section class="section">
                 <h1 class = "title has-text-centered">Executive Board</h1>
                 <div class="container">
-                    <div class = "columns">
+                    <div class = "columns is-multiline">
                     <div class = "column is-one-third" data-aos="fade-down">
                         <div class="card">
                             <div>

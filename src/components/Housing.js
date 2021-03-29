@@ -4,7 +4,7 @@ import ApartmentList from "./housing/ApartmentList";
 
 function Housing() { 
     const [apartments, setApartments] = useState([]);
-    const [tab, setTab] = useState("matrix");
+    const [tab, setTab] = useState("list");
     
     const getApartments = () => {
         return db.collection('apartments').get()
@@ -74,7 +74,7 @@ function Housing() {
                             <li class="tab is-active" data-target = "apartmentList" onClick = {(event) => openTab(event, "list")}>
                                 <a>
                                     <span class="icon is-small"><i class="fas fa-list" aria-hidden="true"></i></span>
-                                    <span>List</span>
+                                     <span>List</span>
                                 </a>
                             </li>
                             <li class = "tab" data-target = "matrix" onClick = {(event) => openTab(event, "matrix")}>
