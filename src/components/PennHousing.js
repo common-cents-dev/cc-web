@@ -27,7 +27,7 @@ export class MapContainer extends Component {
       };
 
       render() {
-        let markers = [ // Just an example this should probably be in your state or props.
+        let markers = [ // Just an example should integrate with backend Vivek set up
           {
             name: "Chestnut Hall Apartments",
             position: { lat: 39.954973, lng: -75.200315 }
@@ -388,4 +388,4 @@ function Housing() {
         );
 }
 
-export default Housing;
+//export default Housing;
