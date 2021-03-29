@@ -2,73 +2,8 @@ import React, { useState, useEffect, Component } from 'react';
 import db from './housing/firestore';
 import ApartmentList from "./housing/ApartmentList";
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
-
-function Housing() { 
-    const [apartments, setApartments] = useState([]);
-    const [tab, setTab] = useState("matrix");
     
-    const getApartments = () => {
-        return db.collection('apartments').get()
-        .then(snap => {
-            let docs = [];
-            snap.docs.forEach(doc => {
-                let rooms = [];
-                let aptDict = doc.data();
-                Object.keys(aptDict).forEach(key => {
-                    if ((key.includes("BA") && key.includes("BR")) || key.includes("Studio")) {
-                        rooms.push(aptDict[key]);
-                        delete aptDict[key];
-                    }
-                });
-                rooms.forEach(room => {
-                    let apt = {...aptDict, ...room};
-                    docs.push(apt);
-                });
-            });
-            return docs;
-        });
-    }
-  
-    useEffect(() => {
-        (async () => {
-            const allApartments = await getApartments();
-            setApartments(allApartments);
-        })();
-    }, []);
-
-    function openTab(evt, tabName) {
-        console.log(tabName);
-        var i, x, tablinks;
-        x = document.getElementsByClassName("content-tab");
-        for (i = 0; i < x.length; i++) {
-            x[i].className = "content-tab is-hidden";
-    
-        }
-        tablinks = document.getElementsByClassName("tab");
-        for (i = 0; i < x.length; i++) {
-            if (tablinks[i]) {
-                tablinks[i].className = "tab";
-            }
-        }
-        document.getElementById(tabName).className.replace("is-hidden", "is-active");
-    
-        evt.currentTarget.className += " is-active";
-        console.log(evt.currentTarget);
-
-        setTab(tabName);
-    }
-
-    useEffect(() => {
-        document.getElementById(tab).classList.add('is-active');
-        document.getElementById(tab).classList.remove('is-hidden');
-    }, [tab]);
-
-    const mapStyles = {
-      width: '100%',
-      height: '100%'
-    };
-    
-    class MapContainer extends Component {
+export class MapContainer extends Component {
       state = {
         showingInfoWindow: false,  // Hides or shows the InfoWindow
         activeMarker: {},          // Shows the active marker upon click
@@ -187,6 +122,71 @@ function Housing() {
     export default GoogleApiWrapper({
       apiKey: 'AIzaSyCA7XfkrKxpoXIfOM8qxM9iQogDdnLe14M'
     })(MapContainer);
+
+function Housing() { 
+    const [apartments, setApartments] = useState([]);
+    const [tab, setTab] = useState("matrix");
+    
+    const getApartments = () => {
+        return db.collection('apartments').get()
+        .then(snap => {
+            let docs = [];
+            snap.docs.forEach(doc => {
+                let rooms = [];
+                let aptDict = doc.data();
+                Object.keys(aptDict).forEach(key => {
+                    if ((key.includes("BA") && key.includes("BR")) || key.includes("Studio")) {
+                        rooms.push(aptDict[key]);
+                        delete aptDict[key];
+                    }
+                });
+                rooms.forEach(room => {
+                    let apt = {...aptDict, ...room};
+                    docs.push(apt);
+                });
+            });
+            return docs;
+        });
+    }
+  
+    useEffect(() => {
+        (async () => {
+            const allApartments = await getApartments();
+            setApartments(allApartments);
+        })();
+    }, []);
+
+    function openTab(evt, tabName) {
+        console.log(tabName);
+        var i, x, tablinks;
+        x = document.getElementsByClassName("content-tab");
+        for (i = 0; i < x.length; i++) {
+            x[i].className = "content-tab is-hidden";
+    
+        }
+        tablinks = document.getElementsByClassName("tab");
+        for (i = 0; i < x.length; i++) {
+            if (tablinks[i]) {
+                tablinks[i].className = "tab";
+            }
+        }
+        document.getElementById(tabName).className.replace("is-hidden", "is-active");
+    
+        evt.currentTarget.className += " is-active";
+        console.log(evt.currentTarget);
+
+        setTab(tabName);
+    }
+
+    useEffect(() => {
+        document.getElementById(tab).classList.add('is-active');
+        document.getElementById(tab).classList.remove('is-hidden');
+    }, [tab]);
+
+    const mapStyles = {
+      width: '100%',
+      height: '100%'
+    };
     
     return(
         <section>
