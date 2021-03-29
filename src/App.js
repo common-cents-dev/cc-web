@@ -9,6 +9,7 @@ import Home from "./components/Home";
 import Events from "./components/Events";
 import About from "./components/About";
 import Marketplace from "./components/Marketplace";
+import Housing from "./components/Housing";
 import Penn from "./chapters/Penn";
 import Cornell from "./chapters/Cornell";
 import JHU from "./chapters/JHU";
@@ -58,6 +59,7 @@ function App() {
           <Route path="/jhu" exact component={() => <JHU />} />
           <Route path="/nyu" exact component={() => <NYU />} />
           <Route path="/yale" exact component={() => <Yale />} />
+          <Route path="/housing" exact component={() => <Housing />} />
           {/* <Route path="/princeton" exact component={() => <Princeton />} />
           <Route path="/binghamton" exact component={() => <Binghamton />} /> */}
         </Switch>

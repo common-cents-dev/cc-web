@@ -1,12 +1,10 @@
 import React from "react";
 import "bulma";
 import tree from "../images/sprouting-tree.png"
-import blueStudents from "../images/Students-Blue-Theme.png"
 import sampleEvent from "../images/linkedin_event.png"
 import chaptersMap from "../images/chapters_map.jpeg"
 import marketplacePic from "../images/marketplace_demo.png"
 import EventsCalendar from "./EventsCalendar.js"
-import UpcomingTimeline from "./UpcomingTimeline.js"
 import BoxKPI from "./BoxKPI.js"
 
 class Home extends React.Component {

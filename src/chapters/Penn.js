@@ -7,11 +7,10 @@ import Vivek from "../images/headshots/upenn/Vivek_Olumbe.jpg"
 import Winni from "../images/headshots/upenn/Winni_Zhang.jpeg"
 import Graham from "../images/headshots/upenn/Graham_Branscom.JPG"
 import Rikki from "../images/headshots/upenn/Rikki_Kong.jpg"
-import Housing from "../components/Housing.js"
+import Housing from "../components/PennHousing.js"
 
 
-class Penn extends React.Component {
-  render() {
+function Penn(){
     return (
         <div>            
             <section class="hero is-white">
@@ -99,7 +98,7 @@ class Penn extends React.Component {
 
                                 <div class="content">
                                 Studying Computer Science and Public Policy. Lifts John up and puts him down.
-</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -121,8 +120,7 @@ class Penn extends React.Component {
 
                                 <div class="content">
                                 Studying Finance & Management. Supports Janey in her yoga headstands.
-
-</div>
+                                  </div>
                             </div>
                         </div>
                     </div>
@@ -144,8 +142,7 @@ class Penn extends React.Component {
 
                                 <div class="content">
                                 Studying Finance and Management. Loves almond butter.
-
-</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -166,8 +163,8 @@ class Penn extends React.Component {
                                 </div>
 
                                 <div class="content">
-                                Studying Economics & Computer Science. Snyder's Hard Pretzels enthusiast.
-</div>
+                                Studying Economics & Computer Science. Snyder's Hard Pretzels enthusiast.  
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -198,6 +195,5 @@ class Penn extends React.Component {
         </div>
     );
   }
-}
 
 export default Penn;
