@@ -11,6 +11,7 @@ class EventsCalendar extends React.Component{
                         initialView="dayGridMonth"
                         events={[
                             { title: 'Taxes 101', date: '2021-04-01' },
+                            {title: 'Finessing Your Finances', date: '2021-04-08' },
                             { title: 'Fintech Revolution', date: '2021-04-15' },
                             { title: 'Credit Card Hacks', date: '2021-04-22' },
                           ]}
