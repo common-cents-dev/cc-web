@@ -41,5 +41,4 @@ function ApartmentList(props) {
     );
 }
 
-
 export default ApartmentList;

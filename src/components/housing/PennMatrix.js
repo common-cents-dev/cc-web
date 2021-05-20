@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Component } from 'react';
-import db from './firestore';
+import db from '../hooks/firestore';
 import ApartmentList from "./ApartmentList";
 import Map from "./PennMap";
 

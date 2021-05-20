@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react';
-import db from './housing/firestore';
+import db from './hooks/firestore';
 import ApartmentList from "./housing/ApartmentList";
 
 function Housing() { 

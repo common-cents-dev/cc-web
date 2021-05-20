@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="robots" content="index, follow" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=7" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="<%= data.config.publicPath %>/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<%= data.config.publicPath %>/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<%= data.config.publicPath %>/img/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<meta name="language" content="en-EN" />
+<meta name="author" content="Irfan Maulana" />
+<title>Free Admin Dashboard Template Build with Bulma.io By Irfan Maulana</title>
+
+<!-- Font Awesome -->
+<!-- See docs on: https://fontawesome.com/v4.7.0/icons/ -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<!-- Font Awesome -->
+
+<link rel="stylesheet" href="<%= data.config.publicPath %>/css/main.css" />
+<script async src="<%= data.config.publicPath %>/js/module-event.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.22.0/apexcharts.min.css" />
+  </head>
+
+  <body>
+    <header class="hero">
+        <div class="hero-head">
+          <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item is--brand">
+                <img
+                  class="navbar-brand-logo"
+                  src="<%= data.config.publicPath %>/img/logo-64.png"
+                  alt="Brand logo"
+                />
+                      </a>
+      
+              <button class="button navbar-burger" data-target="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+      
+            <div class="navbar-menu navbar-end" id="navMenu">
+              <a class="navbar-item nav-tag">
+                <span class="icon is-small">
+                  <i class="fa fa-envelope-o animated"></i>
+                </span>
+                <span class="tag is-success counter">2</span>
+              </a>
+              <a class="navbar-item nav-tag">
+                <span class="icon is-small">
+                  <i class="fa fa-bell-o animated"></i>
+                </span>
+                <span class="tag is-danger counter">6</span>
+              </a>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  <figure class="image is-32x32" style="margin-right: 0.5em">
+                    <img src="https://avatars1.githubusercontent.com/u/7221389?v=4&s=32" />
+                  </figure>
+                  mazipan
+                </a>
+      
+                <div class="navbar-dropdown is-right">
+                  <a class="navbar-item" href="https://mazipan.space/" target="_blank" rel="noopener noreferrer">
+                    <span class="icon is-small">
+                      <i class="fa fa-user-o"></i>
+                    </span>
+                    &nbsp; Profile
+                  </a>
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item">
+                    <span class="icon is-small">
+                      <i class="fa fa-power-off"></i>
+                    </span>
+                    &nbsp; Logout
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+    <div class="wrapper">
+
+			<%- include('/sidebar', {activeMenu: 'home'}) %>
+
+			<main class="main" id="main">
+				<%- include('/breadcrumb', {menuTitle: 'Dashboard', menuIcon: 'fa-tachometer'}) %>
+
+				<div class="columns is-multiline">
+					<div class="column">
+						<div class="box notification is-primary">
+							<div class="heading">Top Seller Total</div>
+							<div class="title">56,950</div>
+							<div class="level">
+								<div class="level-item">
+									<div class="">
+										<div class="heading">Sales $</div>
+										<div class="title is-5">250K</div>
+									</div>
+								</div>
+								<div class="level-item">
+									<div class="">
+										<div class="heading">Overall $</div>
+										<div class="title is-5">750K</div>
+									</div>
+								</div>
+								<div class="level-item">
+									<div class="">
+										<div class="heading">Sales %</div>
+										<div class="title is-5">25%</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="column">
+						<div class="box notification is-warning">
+							<div class="heading">Revenue / Expenses</div>
+							<div class="title">55% / 45%</div>
+							<div class="level">
+								<div class="level-item">
+									<div class="">
+										<div class="heading">Rev Prod $</div>
+										<div class="title is-5">30%</div>
+									</div>
+								</div>
+								<div class="level-item">
+									<div class="">
+										<div class="heading">Rev Serv $</div>
+										<div class="title is-5">25%</div>
+									</div>
+								</div>
+								<div class="level-item">
+									<div class="">
+										<div class="heading">Exp %</div>
+										<div class="title is-5">45%</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="column">
+						<div class="box notification is-info">
+							<div class="heading">Feedback Activity</div>
+							<div class="title">78% &uarr;</div>
+							<div class="level">
+								<div class="level-item">
+									<div class="">
+										<div class="heading">Pos</div>
+										<div class="title is-5">1560</div>
+									</div>
+								</div>
+								<div class="level-item">
+									<div class="">
+										<div class="heading">Neg</div>
+										<div class="title is-5">368</div>
+									</div>
+								</div>
+								<div class="level-item">
+									<div class="">
+										<div class="heading">Pos/Neg %</div>
+										<div class="title is-5">77% / 23%</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="column">
+						<div class="box notification is-danger">
+							<div class="heading">Orders / Returns</div>
+							<div class="title">75% / 25%</div>
+							<div class="level">
+								<div class="level-item">
+									<div class="">
+										<div class="heading">Orders $</div>
+										<div class="title is-5">425K</div>
+									</div>
+								</div>
+								<div class="level-item">
+									<div class="">
+										<div class="heading">Returns $</div>
+										<div class="title is-5">106K</div>
+									</div>
+								</div>
+								<div class="level-item">
+									<div class="">
+										<div class="heading">Success %</div>
+										<div class="title is-5">+ 28,5%</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="columns is-multiline">
+					<div class="column is-6">
+						<article class="message is-dark">
+							<div class="message-header">
+								<p>Chart</p>
+							</div>
+							<div class="message-body">
+								<div id="chartLine" style="width: 100%"></div>
+							</div>
+						</article>
+					</div>
+					<div class="column is-6">
+						<article class="message is-dark">
+							<div class="message-header">
+								<p>Chart</p>
+							</div>
+							<div class="message-body">
+								<div id="chartScatter" style="width: 100%"></div>
+							</div>
+						</article>
+					</div>
+					<div class="column is-6">
+						<article class="message is-dark">
+							<div class="message-header">
+								<p>Chart</p>
+							</div>
+							<div class="message-body">
+								<div id="chartDoughnut" style="width: 100%"></div>
+							</div>
+						</article>
+					</div>
+					<div class="column is-6">
+						<article class="message is-dark">
+							<div class="message-header">
+								<p>Chart</p>
+							</div>
+							<div class="message-body">
+								<div id="chartBar" style="width: 100%"></div>
+							</div>
+						</article>
+					</div>
+				</div>
+
+				<% include /horizontalAds %>
+				<% include /copyright %>
+			</main>
+    </div>
+
+    <% include /jsonLd %>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.22.0/apexcharts.min.js"></script>
+    <script defer src="<%= data.config.publicPath %>/js/module-chart.js"></script>
+  </body>
+</html>
