@@ -1,13 +1,23 @@
 import React, { useState, useEffect} from 'react';
-import logo from "../../images/logos/discover_logo.png"
 
 function Event(props) {
 
     const [infoDisplay, setDisplay] = useState(false);
     const [height, setHeight] = useState("auto");
+    const [width, setWidth] = useState("auto");
     const [classAttribute, setClassAttributes] = useState("card");
 
+
+
     function handleClick() {
+        if (props.highlights == null) {
+            return;
+        }
+
+        var elem = document.getElementById(props.name);
+        var height = elem.clientHeight;
+        var width = elem.clientWidth;
+
         setDisplay(!infoDisplay);
         console.log(infoDisplay);
         if (infoDisplay) {
@@ -15,6 +25,9 @@ function Event(props) {
         } else {
             setClassAttributes("card rotate-vert-center-reverse")
         }
+
+        setHeight(height);
+        setWidth(width);
     }
 
     return (
@@ -29,17 +42,17 @@ function Event(props) {
                     </div> */}
                     </p>
                 </header>
-                <div id = {props.date} class="card-content has-text-centered p-0" style = {{"width": "fit-content", "height": "auto", "background-image": props.IG_square}}>
+                <div id = {props.name} class="card-content has-text-centered p-0" style = {{"width": "fit-content", "height": height, "background-image": props.IG_square}}>
                     {!infoDisplay && 
                     <figure class="image is-inline-block" style = {{"width": "auto", "height": "auto"}}>
-                        <img src={props.IG_square} style = {{"width": "auto", "height": "auto", "margin": "0"}} alt={props.name} />
+                        <img src={props.IG_square} style = {{"width": width, "height": height, "margin": "0"}} alt={props.name} />
                     </figure>}
                     {infoDisplay &&
-                     <div style =  {{"width": "auto", "height": "auto"}}> <iframe title = {props.name} style = {{"height": "100%", "width": "100%"}} src = {props.highlights}></iframe>
+                     <div style =  {{"width": "auto", "height": "auto"}}> <iframe title = {props.name} style = {{"height": height, "width": width}} src = {props.highlights} allow = "fullscreen"></iframe>
                    </div>}
                 </div>
                 <footer class="card-footer">
-                    <a href onClick={() => handleClick()} class="card-footer-item">Learn More</a>
+                    <a href onClick={() => handleClick()} class="card-footer-item">{props.highlights ? "Learn More" : "Coming Soon"}</a>
                 </footer>
             </div>
             </div>
