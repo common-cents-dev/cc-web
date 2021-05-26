@@ -36,7 +36,7 @@ function Marketplace() {
                         is-5-widescreen is-offset-1-widescreen
                         is-5-fullhd is-offset-1-fullhd">
                         <h1 class="title titled is-1 mb-6">
-                        Marketplace
+                        Product Showcase
                         </h1>
                         <h2 class="subtitle subtitled">
                         Look at financial products great for students to help you along your journey to financial independence
