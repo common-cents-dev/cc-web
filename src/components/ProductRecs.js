@@ -11,7 +11,7 @@ import Vanguard from "./marketplace/Vanguard";
 import Coinbase from "./marketplace/Coinbase";
 import useScript from './hooks/useScript';
 
-function Marketplace() {
+function ProductRecs() {
         useScript("NavbarScript.js");
         const [modalDisplay, showModal] = useState(false);
 
@@ -28,7 +28,7 @@ function Marketplace() {
                 <section>
                 <div class="hero-body is-small" style = {{"margin-top": "-2em"}}>
                 <div class="container">
-                    <div class="columns  is-vcentered reverse-columns">
+                    <div class="columns is-vcentered reverse-columns">
                         <div data-aos="fade-right" class="column
                         is-10-mobile is-offset-1-mobile
                         is-10-tablet is-offset-1-tablet
@@ -36,7 +36,7 @@ function Marketplace() {
                         is-5-widescreen is-offset-1-widescreen
                         is-5-fullhd is-offset-1-fullhd">
                         <h1 class="title titled is-1 mb-6">
-                        Product Showcase
+                        Our Picks
                         </h1>
                         <h2 class="subtitle subtitled">
                         Look at financial products great for students to help you along your journey to financial independence
@@ -53,7 +53,14 @@ function Marketplace() {
                         <img src={heroPic} />
                         </figure>
                     </div>
-
+                    </div>
+                    <div data-aos="fade-right" class="column
+                        is-12-mobile is-offset-1-mobile
+                        is-12-tablet is-offset-1-tablet
+                        is-12-desktop is-offset-1-desktop
+                        is-12-widescreen is-offset-1-widescreen
+                        is-12-fullhd is-offset-1-fullhd">
+                            <p style = {{"fontSize": "7pt"}}>We are not affiliated, associated, sponsored, or endorsed by companies of the listed products unless labeled as "CC Partner".</p>
                     </div>
                 </div>
                 </div>
@@ -213,4 +220,4 @@ function Marketplace() {
 }
 
 
-export default Marketplace;
+export default ProductRecs;

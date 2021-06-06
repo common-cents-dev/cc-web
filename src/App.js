@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Events from "./components/Events";
 import About from "./components/About";
-import Marketplace from "./components/Marketplace";
+import ProductRecs from "./components/ProductRecs";
 import Housing from "./components/Housing";
 import Penn from "./chapters/Penn";
 import Cornell from "./chapters/Cornell";
@@ -54,7 +54,7 @@ function App() {
           <Route path="/" exact component={() => <Home />} />
           <Route path="/about" exact component={() => <About />} />
           <Route path="/events" exact component={() => <Events />} />
-          <Route path="/marketplace" exact component={() => <Marketplace />} />
+          <Route path="/picks" exact component={() => <ProductRecs />} />
           <Route path="/penn" exact component={() => <Penn />} />
           <Route path="/cornell" exact component={() => <Cornell />} />
           <Route path="/jhu" exact component={() => <JHU />} />

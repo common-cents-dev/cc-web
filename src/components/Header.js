@@ -32,7 +32,7 @@ class Header extends React.Component{
                              {/* <Link class="navbar-item is-size-5 has-text-weight-semibold" to = "/events">
                                 Events
                             </Link> */}
-                            <Link class="navbar-item is-size-5 has-text-weight-semibold" to = "/marketplace">
+                            <Link class="navbar-item is-size-5 has-text-weight-semibold" to = "/picks">
                                 Start
                             </Link>
                             <div class="navbar-item has-dropdown is-hoverable">
