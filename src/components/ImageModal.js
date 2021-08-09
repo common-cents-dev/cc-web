@@ -4,17 +4,13 @@ import timeline from "../images/recruitment-timeline-su21.png"
 class ImageModal extends React.Component{
     render(){
         return(
-            <div class = "columns">
-                <div class = "column" data-aos="fade-down">
-                  <div class = "card">
-                      <div class = "card-content">
-                        <figure class="image">
-                        <img src={timeline} style = {{height: "90vh", width: "auto"}}/>
-                        </figure>
-                      </div>
+          <section class="section">
+            <div class="container">
+                <div class = "box">
+                    <img src={timeline} style = {{height: "90vh", width: "auto"}}/>
                   </div>
-                </div>
             </div>
+          </section>
           );
     }
 }
