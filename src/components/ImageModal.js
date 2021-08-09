@@ -9,7 +9,7 @@ class ImageModal extends React.Component{
                   <div class = "card">
                       <div class = "card-content">
                         <figure class="image">
-                        <img src={timeline}/>
+                        <img src={timeline} style = {{height: "90vh", width: "auto"}}/>
                         </figure>
                       </div>
                   </div>
