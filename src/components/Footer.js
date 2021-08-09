@@ -50,10 +50,10 @@ class Footer extends React.Component{
                                                 <div class="select is-fullwidth">
                                                     <select name = "class">
                                                     <option disabled selected>Graduation Year</option>
+                                                    <option>2025</option>
                                                     <option>2024</option>
                                                     <option>2023</option>
                                                     <option>2022</option>
-                                                    <option>2021</option>
                                                     </select>
                                                 </div>
                                                 <span class="icon is-left">

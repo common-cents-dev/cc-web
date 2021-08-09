@@ -18,6 +18,7 @@ import NYU from "./chapters/NYU";
 import Princeton from "./chapters/Princeton";
 import Binghamton from "./chapters/Binghamton";
 import PennHousing from "./components/housing/PennHousing";
+import ImageModal from "./components/ImageModal";
 
 
 const trackingId = "UA-178272831-1"; // Replace with your Google Analytics tracking ID
@@ -62,6 +63,7 @@ function App() {
           <Route path="/yale" exact component={() => <Yale />} />
           <Route path="/housing" exact component={() => <Housing />} />
           <Route path="/penn/housing" exact component={() => <PennHousing />} />
+          <Route path="/penn-recruiting" exact component={() => <ImageModal />} />
           {/* <Route path="/princeton" exact component={() => <Princeton />} />
           <Route path="/binghamton" exact component={() => <Binghamton />} /> */}
         </Switch>
